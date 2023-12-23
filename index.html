@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Video Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #43c6ac, #191654);
+    }
+
+    header {
+      background: linear-gradient(to right, #2980b9, #2ecc71);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      padding: 10px;
+      color: #fff;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .video-card:hover .video-info {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #2980b9;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 0.9em;
+      color: #fff;
+    }
+
+    footer {
+      background: linear-gradient(to right, #2980b9, #2ecc71);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Awesome Video Gallery</h1>
+  </header>
+
+  <div class="video-gallery">
+    <div class="video-card">
+      <video controls>
+        <source src="reel1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-info">
+        <h3>Video Title </h3>
+        <p>Description for Video .</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <video controls>
+        <source src="reel2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-info">
+        <h3>Video Title 2</h3>
+        <p>Description for Video 2.</p>
+      </div>
+    </div>
+    <div class="video-card">
+        <video controls>
+          <source src="reel3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      
+      <div class="video-card">
+        <video controls>
+          <source src="reel7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel10.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel11.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel12.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel13.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel14.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel15.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel16.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+              
+      <div class="video-card">
+        <video controls>
+          <source src="reel17.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel18.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel19.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel20.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel21.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel22.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel23.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel24.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel25.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel26.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel27.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel28.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel29.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel30.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel90.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+            
+      <div class="video-card">
+        <video controls>
+          <source src="reel91.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel92.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel93.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel94.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel95.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel96.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel97.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel98.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel99.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="reel100.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Video Title </h3>
+          <p>Description for Video .</p>
+        </div>
+      </div>
+
+    <!-- Add more video cards as needed -->
+
+  </div>
+
+  <footer>
+    <p>&copy; Planet_.view</p>
+  </footer>
+
+</body>
+</html>

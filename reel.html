@@ -1,0 +1,94 @@
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .reels-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .reel {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      margin: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .reel:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .reel:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .reel:hover:before {
+      opacity: 1;
+    }
+    
+    .reel img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+    
+    .reel h3 {
+      color: #fff;
+      font-size: 18px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reels-container">
+    <div class="reel">
+      <img src="path/to/your-image-1.jpg" alt="Reel 1">
+      <h3>Reel 1</h3>
+    </div>
+    <div class="reel">
+      <img src="path/to/your-image-2.jpg" alt="Reel 2">
+      <h3>Reel 2</h3>
+    </div>
+    <div class="reel">
+      <img src="path/to/your-image-3.jpg" alt="Reel 3">
+      <h3>Reel 3</h3>
+    </div>
+    <!-- Add more reels here -->
+  </div>
+</body>
+</html>
